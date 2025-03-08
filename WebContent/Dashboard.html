@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    </head>
+
+<body>
+
+ <!-- Content Section -->
+    <div class="content">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <!-- Address Screen -->
+        <div id="address" class="hidden">
+            <h3>Address Screen</h3>
+            <form action="DashboardServlet" method="POST">
+                <input type="hidden" name="action" value="address" />
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required placeholder="Enter your city">
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required placeholder="Enter your state">
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required placeholder="Enter your country">
+
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="hidden">
+            <h3>Education</h3>
+            <form action="DashboardServlet" method="POST">
+                <input type="hidden" name="action" value="education" />
+                <label for="qualification">Highest Qualification:</label>
+                <input type="text" id="qualification" name="qualification" required placeholder="Enter your qualification">
+
+                <label for="passout-year">Passout Year:</label>
+                <input type="number" id="passout-year" name="passout-year" required placeholder="Enter passout year">
+
+                <label for="percentage">Percentage in Highest Qualification:</label>
+                <input type="number" id="percentage" name="percentage" required placeholder="Enter your percentage">
+
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+        </div>
+
+        <!-- Family Details -->
+        <div id="family-details" class="hidden">
+            <h3>Family Details</h3>
+            <form action="DashboardServlet" method="POST">
+                <input type="hidden" name="action" value="family" />
+                <label for="father-name">Father's Name:</label>
+                <input type="text" id="father-name" name="father-name" required placeholder="Enter your father's name">
+
+                <label for="mother-name">Mother's Name:</label>
+                <input type="text" id="mother-name" name="mother-name" required placeholder="Enter your mother's name">
+
+                <label for="siblings">Number of Siblings:</label>
+                <input type="number" id="siblings" name="siblings" required placeholder="Enter number of siblings">
+
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+        </div>
+      
+    </div>
+<br><br>
+  <a href="Login.html" style="text-decoration: none;">
+                <button type="submit">Log out</button>
+            </a>
+
+</body>
+
+</html>
